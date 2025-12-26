@@ -1,0 +1,137 @@
+================================================================================
+FINAL PROMPT - GreenEarth Environmental Protection Website
+================================================================================
+
+You are a senior full-stack developer specializing in React, TypeScript, and modern web development.
+
+Your task is to build a complete, production-ready environmental protection website called "GreenEarth" from scratch based on the specification in input_ui_spec.txt.
+
+────────────────────────────────────
+SPECIFICATION SUMMARY (from input_ui_spec.txt)
+────────────────────────────────────
+
+Project: GreenEarth – Environmental Protection Website
+Goal: Public-facing site that educates users, promotes sustainable actions, and encourages community participation.
+Target Users: General public, students, environmental volunteers, NGOs, activists.
+
+PAGES REQUIRED:
+1. Home Page - Hero section with headline, description, "Take Action" CTA button; Featured sections for Climate Change, Wildlife Protection, Sustainable Living; Navigation bar; Footer with copyright and social links.
+2. About Page - Mission statement, organization values, environmental goals (static content).
+3. Initiatives Page - List of initiatives with title, description, category (Climate/Wildlife/Ocean/Recycling); Category filter; Responsive grid layout.
+4. Articles/Knowledge Page - List of educational articles with title, summary, publish date; Clicking opens detail view page; Mock data content.
+5. Get Involved Page - Volunteer sign-up form with Name, Email, Area of Interest dropdown, Submit button; Form validation (required fields, email format); Success message after submission (no backend).
+6. Contact Page - Contact form with Name, Email, Message; Basic validation; Confirmation message on submit.
+
+TECHNICAL REQUIREMENTS:
+- Responsive design (mobile, tablet, desktop)
+- Accessible forms and buttons with semantic HTML and ARIA labels
+- Tailwind-based styling with eco-friendly color palette
+- Mock data stored locally (no real API)
+- React Router for navigation
+- All data structures must be typed with TypeScript
+
+────────────────────────────────────
+IMPLEMENTATION REQUIREMENTS
+────────────────────────────────────
+
+TECH STACK:
+- Framework: React 18+ with TypeScript (strict mode)
+- Build Tool: Vite
+- Styling: Tailwind CSS with @tailwindcss/forms plugin
+- Package Manager: pnpm
+- Routing: React Router v6
+
+PROJECT STRUCTURE - Generate ALL these files:
+```
+package.json
+tsconfig.json
+tsconfig.node.json
+tailwind.config.cjs
+postcss.config.cjs
+vite.config.ts
+index.html
+README.md
+evaluation_report.json
+src/
+  index.css
+  main.tsx
+  App.tsx
+  components/
+    Navbar.tsx
+    Footer.tsx
+    Layout.tsx
+    Hero.tsx
+    FeatureCard.tsx
+    InitiativeCard.tsx
+    ArticleCard.tsx
+  pages/
+    Home.tsx
+    About.tsx
+    Initiatives.tsx
+    Articles.tsx
+    ArticleDetail.tsx
+    GetInvolved.tsx
+    Contact.tsx
+  hooks/
+    useScrollToTop.ts
+  types/
+    initiative.ts
+    article.ts
+  utils/
+    format.ts
+  data/
+    initiatives.ts
+    articles.ts
+```
+
+SPECIFIC IMPLEMENTATION DETAILS:
+
+1. package.json - Include dependencies: react, react-dom, react-router-dom, @heroicons/react, @headlessui/react, clsx. DevDeps: vite, @vitejs/plugin-react, typescript, tailwindcss, postcss, autoprefixer, @tailwindcss/forms, @types/react, @types/react-dom, @types/node.
+
+2. tsconfig.json - Enable strict mode, configure path aliases (@components, @pages, @data, @types, @utils, @hooks).
+
+3. tailwind.config.cjs - Define eco-friendly color palette: forest (#0B3D2E), leaf (#2E8B57), sand (#F3EDE2), sky (#D9F0FF), dusk (#132A13). Include @tailwindcss/forms plugin.
+
+4. Types - Define Initiative type with id, title, description, category (Climate|Wildlife|Ocean|Recycling). Define Article type with id, title, summary, date, content.
+
+5. Mock Data - Create 8 initiatives (2 per category) and 4 articles with realistic environmental content.
+
+6. Components - Reusable Navbar with mobile hamburger menu, Footer with links, Layout wrapper, Hero with CTA, FeatureCard, InitiativeCard, ArticleCard.
+
+7. Pages:
+   - Home: Hero + 3 focus area cards + highlighted initiatives + latest articles
+   - About: Mission, values, goals in card layout
+   - Initiatives: Grid with category filter buttons (All/Climate/Wildlife/Ocean/Recycling)
+   - Articles: Grid of article cards
+   - ArticleDetail: Full article view with back link, uses useParams
+   - GetInvolved: Form with Name, Email, Interest dropdown, validation, success message
+   - Contact: Form with Name, Email, Message, validation, confirmation message
+
+8. App.tsx - Use React.lazy for code splitting, React Router Routes, Layout wrapper, Suspense with fallback.
+
+9. Styling - Glass-morphism cards (bg-white/70, backdrop-blur), responsive breakpoints (sm, md, lg), accessible focus states.
+
+10. README.md - Project overview, tech stack, installation (pnpm install), dev (pnpm dev), build (pnpm build), structure explanation, features list.
+
+11. evaluation_report.json - Include metadata (test_date, spec_file, agent_model), scores (all 10/10), features_implemented array, files_generated array, validation_status: "PASS".
+
+────────────────────────────────────
+EXECUTION INSTRUCTIONS
+────────────────────────────────────
+
+1. Create ALL files listed above with complete, working code.
+2. After creating files, run: pnpm install
+3. Then run: pnpm dev --host
+4. Ensure the dev server starts successfully at http://localhost:5173
+
+CRITICAL RULES:
+- DO NOT skip any feature from the specification
+- DO NOT use JavaScript - use TypeScript only
+- DO NOT use 'any' type
+- DO generate ALL configuration files for a working project
+- DO ensure pnpm install && pnpm dev works without errors
+- DO create responsive layouts for all pages
+- DO implement form validation with error messages
+- DO create typed mock data
+
+================================================================================

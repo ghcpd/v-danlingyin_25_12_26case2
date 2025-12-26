@@ -1,0 +1,88 @@
+Project Name: GreenEarth – Environmental Protection Website
+
+Goal:
+Create a public-facing environmental protection website that educates users,
+promotes sustainable actions, and encourages community participation.
+
+Target Users:
+- General public
+- Students
+- Environmental volunteers
+- NGOs and activists
+
+────────────────────────────────────
+Pages & Features
+────────────────────────────────────
+
+1. Home Page
+- Hero section with:
+  - Headline promoting environmental protection
+  - Short description text
+  - Call-to-action button: "Take Action"
+- Featured sections:
+  - Climate Change
+  - Wildlife Protection
+  - Sustainable Living
+- Navigation bar with links to all pages
+- Footer with copyright and social links (mock)
+
+2. About Page
+- Mission statement
+- Organization values
+- Environmental goals
+- Static informational content
+
+3. Initiatives Page
+- List of environmental initiatives/projects
+- Each initiative includes:
+  - Title
+  - Short description
+  - Category (Climate, Wildlife, Ocean, Recycling)
+- Ability to filter initiatives by category
+- Responsive grid layout
+
+4. Articles / Knowledge Page
+- List of educational articles
+- Each article includes:
+  - Title
+  - Summary
+  - Publish date
+- Clicking an article opens a detail view page
+- Article content can be mock data
+
+5. Get Involved Page
+- Volunteer sign-up form with fields:
+  - Name
+  - Email
+  - Area of interest (dropdown)
+  - Submit button
+- Form validation (required fields, email format)
+- Success message after submission (no backend)
+
+6. Contact Page
+- Contact form with:
+  - Name
+  - Email
+  - Message
+- Basic validation
+- Display confirmation message on submit
+
+────────────────────────────────────
+Technical & UI Requirements
+────────────────────────────────────
+
+- Responsive design for mobile, tablet, desktop
+- Clear visual hierarchy
+- Accessible forms and buttons
+- Tailwind-based styling
+- Mock data stored locally (no real API)
+- Use React Router for navigation
+- All data structures must be typed
+
+────────────────────────────────────
+Non-Functional Requirements
+────────────────────────────────────
+- No backend required
+- No authentication required
+- No external APIs required
+- Clean, readable UI (eco-friendly color palette preferred)
