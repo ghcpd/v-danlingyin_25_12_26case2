@@ -1,0 +1,88 @@
+import type { Initiative } from '../types';
+
+export const initiatives: Initiative[] = [
+  {
+    id: '1',
+    title: 'Carbon Neutral Cities',
+    description: 'Working with urban planners to create zero-emission cities by 2040 through sustainable transportation, renewable energy, and green building standards.',
+    category: 'Climate',
+    imageUrl: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400',
+  },
+  {
+    id: '2',
+    title: 'Rainforest Preservation',
+    description: 'Protecting critical rainforest ecosystems in the Amazon and Southeast Asia through land acquisition and partnerships with indigenous communities.',
+    category: 'Wildlife',
+    imageUrl: 'https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=400',
+  },
+  {
+    id: '3',
+    title: 'Ocean Plastic Cleanup',
+    description: 'Deploying innovative cleanup systems in the Pacific Ocean to remove plastic waste and prevent further pollution from reaching marine ecosystems.',
+    category: 'Ocean',
+    imageUrl: 'https://images.unsplash.com/photo-1484291470158-b8f8d608850d?w=400',
+  },
+  {
+    id: '4',
+    title: 'Community Recycling Hubs',
+    description: 'Establishing local recycling centers in underserved communities to increase recycling rates and create green jobs.',
+    category: 'Recycling',
+    imageUrl: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400',
+  },
+  {
+    id: '5',
+    title: 'Renewable Energy Transition',
+    description: 'Supporting communities in transitioning from fossil fuels to solar, wind, and other renewable energy sources.',
+    category: 'Climate',
+    imageUrl: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400',
+  },
+  {
+    id: '6',
+    title: 'Endangered Species Protection',
+    description: 'Creating wildlife corridors and protected areas for endangered species including tigers, elephants, and rhinos.',
+    category: 'Wildlife',
+    imageUrl: 'https://images.unsplash.com/photo-1564349683136-77e08dba1ef3?w=400',
+  },
+  {
+    id: '7',
+    title: 'Coral Reef Restoration',
+    description: 'Restoring damaged coral reef systems through coral gardening and reducing local stressors like pollution and overfishing.',
+    category: 'Ocean',
+    imageUrl: 'https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=400',
+  },
+  {
+    id: '8',
+    title: 'Zero Waste Schools',
+    description: 'Implementing comprehensive recycling and composting programs in schools to educate the next generation about waste reduction.',
+    category: 'Recycling',
+    imageUrl: 'https://images.unsplash.com/photo-1567168544813-cc03465b4fa8?w=400',
+  },
+  {
+    id: '9',
+    title: 'Urban Reforestation',
+    description: 'Planting millions of trees in urban areas to combat heat islands, improve air quality, and create green spaces for communities.',
+    category: 'Climate',
+    imageUrl: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400',
+  },
+  {
+    id: '10',
+    title: 'Pollinator Protection',
+    description: 'Creating bee-friendly habitats and advocating for pesticide regulations to protect pollinators essential for food production.',
+    category: 'Wildlife',
+    imageUrl: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400',
+  },
+  {
+    id: '11',
+    title: 'Sustainable Fisheries',
+    description: 'Working with fishing communities to implement sustainable practices that protect marine life while supporting livelihoods.',
+    category: 'Ocean',
+    imageUrl: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400',
+  },
+  {
+    id: '12',
+    title: 'E-Waste Recycling',
+    description: 'Establishing safe e-waste collection and recycling programs to prevent toxic materials from entering landfills.',
+    category: 'Recycling',
+    imageUrl: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400',
+  },
+];

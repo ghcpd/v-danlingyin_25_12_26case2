@@ -1,0 +1,46 @@
+You are a senior full-stack developer. Build a complete, production-ready environmental protection website called "GreenEarth" from scratch.
+
+## Specification
+Create a public-facing website with these pages:
+1. **Home**: Hero section with "Take Action" CTA, featured sections (Climate Change, Wildlife Protection, Sustainable Living), navigation bar, footer with social links
+2. **About**: Mission statement, organization values, environmental goals
+3. **Initiatives**: List of initiatives with title/description/category (Climate, Wildlife, Ocean, Recycling), category filtering, responsive grid
+4. **Articles**: List of educational articles with title/summary/date, clicking opens detail view
+5. **Get Involved**: Volunteer form (Name, Email, Area of Interest dropdown), validation, success message
+6. **Contact**: Contact form (Name, Email, Message), validation, confirmation message
+
+## Technical Requirements
+- React 18+ with TypeScript (strict mode, no `any`)
+- Vite build tool
+- Tailwind CSS with eco-friendly color palette
+- React Router for navigation
+- Responsive design (mobile/tablet/desktop)
+- Accessible forms with ARIA labels
+- Lazy loading for pages
+- Mock data stored locally
+
+## Required Files
+Generate ALL files for a working project:
+- Configuration: package.json, tsconfig.json, vite.config.ts, tailwind.config.js, postcss.config.js, index.html
+- src/types/index.ts - TypeScript interfaces
+- src/data/ - Mock data for initiatives, articles, navigation
+- src/hooks/useForm.ts - Form state management hook
+- src/utils/index.ts - Utility functions
+- src/components/ui/ - Button, Card, Badge, FormElements (Input, Textarea, Select)
+- src/components/layout/ - Navbar, Footer, Layout
+- src/pages/ - HomePage, AboutPage, InitiativesPage, ArticlesPage, ArticleDetailPage, GetInvolvedPage, ContactPage
+- src/App.tsx - Root with React Router and lazy loading
+- src/main.tsx - Entry point
+- src/index.css - Tailwind imports and global styles
+- README.md - Full documentation
+- evaluation_report.json - Self-evaluation report
+
+## Key Implementation Details
+1. Use custom `useForm` hook for form validation (required fields, email format)
+2. Initiatives page must have working category filter buttons
+3. Article detail page with formatted content and related articles
+4. Forms show success messages after submission (no backend)
+5. Include 404 Not Found page
+6. Footer with mock social links (Facebook, Twitter, Instagram, YouTube)
+
+After generating all files, run: `npm install && npm run dev` to verify the project works.
